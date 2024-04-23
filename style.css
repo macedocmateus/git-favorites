@@ -88,13 +88,11 @@ header {
 
 table {
     margin-top: 8.7rem;
-    border-collapse: collapse;
     text-align: left;
-    border-radius: 1.2rem;
-    border: 1px solid #4A808C;
+    border-collapse: collapse;
 }
 
-table th {
+table thead th {
     background-color: #092D38;
     padding: 1.6rem 2.4rem 1.6rem 4.0rem;
     height: 6.4rem;
@@ -110,6 +108,20 @@ table tr:nth-child(even) {
 
 table tbody td {
     padding: 2.4rem 2.4rem 2.4rem 4rem;
+    color: #E1E1E6;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+table tbody td a {
+    text-decoration: none;
+    color: #E1E1E6;
+}
+
+table tbody td span {
+    font-weight: 400;
+    color: #E1E1E6;
 }
 
 table tbody td.user img {
@@ -117,4 +129,15 @@ table tbody td.user img {
     height: 5rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+table tbody td button {
+    background-color: transparent;
+    border: none;
+    color: #F75A68;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 160%;
+
+    cursor: pointer;
 }
