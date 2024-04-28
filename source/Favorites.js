@@ -10,7 +10,6 @@ export class Favorites {
     load() {
 
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
-
     }
 
     save() {
@@ -73,7 +72,6 @@ export class FavoritesView extends Favorites {
 
     update() {
         this.removeAllTr()
-
 
         this.entries.forEach(user => {
             const row = this.createRow()
